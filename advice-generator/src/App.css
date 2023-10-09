@@ -44,10 +44,6 @@ body {
   content: url(./images/pattern-divider-desktop.svg);
   width: 100%;
 }
-.space {
-  height: 16px;
-  width: 100%;
-}
 
 .card button {
   background-color: hsl(150, 100%, 66%);
