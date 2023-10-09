@@ -22,7 +22,8 @@ function AdviceCard() {
           <Card.Title>ADVICE #{advice.id}</Card.Title>
           <Card.Text>"{advice.advice}"</Card.Text>
           <div className="line">
-            <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg">
+            <div className="space"></div>
+            {/* <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg">
               <g fill="none" fill-rule="evenodd">
                 <path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z" />
                 <g transform="translate(212)" fill="#CEE3E9">
@@ -30,7 +31,8 @@ function AdviceCard() {
                   <rect x="14" width="6" height="16" rx="3" />
                 </g>
               </g>
-            </svg>
+            </svg> */}
+            {/* <svg className="space"></svg> */}
           </div>
           <Button onClick={fetchAdvice}>
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">

@@ -2,7 +2,6 @@
 
 #root {
   max-width: 1440px;
-  height: 100%;
   margin: 0 auto;
   font-family: Manrope;
   align-items: center;
@@ -39,11 +38,17 @@ body {
   padding: 0 2rem;
 }
 .line {
+  height: 5rem;
+}
+.line::before {
+  content: url(./images/pattern-divider-desktop.svg);
+  width: 100%;
+}
+.space {
+  height: 16px;
+  width: 100%;
 }
 
-.line svg {
-  margin-bottom: 4rem;
-}
 .card button {
   background-color: hsl(150, 100%, 66%);
   padding: 1rem;
@@ -62,4 +67,16 @@ body {
 }
 .card button:hover {
   box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 1150px) {
+  #root {
+    width: 375px;
+  }
+  .card {
+    width: 100%;
+  }
+  .line::before {
+    content: url(./images/pattern-divider-mobile.svg);
+  }
 }
