@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 #root {
-  width: 1440px;
+  max-width: 1440px;
   height: 100%;
   margin: 0 auto;
   font-family: Manrope;
@@ -38,6 +38,9 @@ body {
   font-size: 28px;
   padding: 0 2rem;
 }
+.line {
+}
+
 .line svg {
   margin-bottom: 4rem;
 }
@@ -50,8 +53,13 @@ body {
   bottom: -30px;
   right: 50%;
   transform: translateX(50%);
+  transition: box-shadow 0.3s ease-in-out;
+  border: 0;
 }
 
 .card button svg {
   margin: 0;
+}
+.card button:hover {
+  box-shadow: 0 0 20px hsl(150, 100%, 66%);
 }
